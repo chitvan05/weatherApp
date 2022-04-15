@@ -1,0 +1,23 @@
+<p>Hi my name is {{name}}</p>
+
+<img src="{{imageUrl}}" alt="" >
+
+<br>
+<p>click here to change the name</p>
+<button (click)="demoFuntion()" >click me</button>
+
+
+<button (click)="showImage()" >click to see Image</button>
+
+<br>
+
+<button (click)="openLink()" >click here to visit facebook</button>
+
+<br>
+
+<form action="">
+<p>name</p>
+<input type="text" [(ngModel)]="twoBinding" name="name" >
+<br>
+<button (click)="checkTwoWayBinding()" >check value</button>
+</form>

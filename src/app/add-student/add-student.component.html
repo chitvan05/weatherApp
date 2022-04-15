@@ -1,0 +1,46 @@
+<p>Name</p>
+<input type="text" name="" id="" [(ngModel)]="studentName">
+<p>Age</p>
+<input type="text" name="" id="" [(ngModel)]="studentAge">
+<p>Location</p>
+<input type="text" name="" id="" [(ngModel)]="studentLocation">
+<br>
+<br>
+<button (click)="addStudentInfo()" >Add Student</button>
+<button (click)="clearStudentInfo()" >Reset</button>
+
+<br>
+<br>
+
+<!-- <h1>Student List</h1>
+<h3>Delete by Range</h3>
+<p>From</p>
+<input type="text" [(ngModel)]="fromValue">
+<p>To</p>
+<input type="text" [(ngModel)]="toValue">
+
+<br>
+<br>
+<button (click)="deleteFromSelectedRange()">Delete Selected Range</button> -->
+
+<h1>Delete for Selected Paramter</h1>
+<p>City Names</p>
+<select (change)="deleteSelectedCity($event.target.value)">
+    <option *ngFor="let data of studentList" value="{{data.location}}">  {{data.location}}</option>
+</select>
+<table>
+    <tr>
+        <th>Srno</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Location</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let data of studentList; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.location}}</td>
+        <td><button (click)="deleteStudentInfo(i)" >Delete</button></td>
+    </tr>
+</table>
