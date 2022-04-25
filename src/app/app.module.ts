@@ -10,6 +10,9 @@ import { MondayComponent } from './monday/monday.component';
 import { FormsModule } from '@angular/forms';
 import { TuesdayComponent } from './tuesday/tuesday.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { CommonModule } from '@angular/common';
+import { NumberPipe } from './number.pipe';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { AddStudentComponent } from './add-student/add-student.component';
     LogoutComponent,
     MondayComponent,
     TuesdayComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    NumberPipe,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

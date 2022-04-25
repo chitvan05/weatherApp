@@ -13,6 +13,8 @@ export class AddStudentComponent implements OnInit {
   studentList: any = [];
   toValue:any;
   fromValue:any;
+  smallName:any = 'rahul';
+  numberpipe:any = 24784464;
   constructor() { }
 
   ngOnInit(): void {

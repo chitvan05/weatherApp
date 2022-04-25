@@ -1,4 +1,4 @@
-<p>Name</p>
+<!-- <p>Name</p>
 <input type="text" name="" id="" [(ngModel)]="studentName">
 <p>Age</p>
 <input type="text" name="" id="" [(ngModel)]="studentAge">
@@ -10,7 +10,7 @@
 <button (click)="clearStudentInfo()" >Reset</button>
 
 <br>
-<br>
+<br> -->
 
 <!-- <h1>Student List</h1>
 <h3>Delete by Range</h3>
@@ -23,7 +23,7 @@
 <br>
 <button (click)="deleteFromSelectedRange()">Delete Selected Range</button> -->
 
-<h1>Delete for Selected Paramter</h1>
+<!-- <h1>Delete for Selected Paramter</h1>
 <p>City Names</p>
 <select (change)="deleteSelectedCity($event.target.value)">
     <option *ngFor="let data of studentList" value="{{data.location}}">  {{data.location}}</option>
@@ -43,4 +43,10 @@
         <td>{{data.location}}</td>
         <td><button (click)="deleteStudentInfo(i)" >Delete</button></td>
     </tr>
-</table>
+</table> -->
+
+<h1>Pipes</h1>
+
+<h3>my name is {{smallName }}</h3>
+<h3>number pipe {{numberpipe  | number }}</h3>
+<p>{{smallName}}</p>
