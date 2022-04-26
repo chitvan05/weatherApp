@@ -2,11 +2,12 @@
     
     <p>user name</p>
     <input type="text" name="uname"  ngModel required #userName="ngModel">
-    <p style="color: red;" *ngIf="userName.touched && !userName.valid " >username is required</p>
+    <p style="color: red;" *ngIf="userName.touched && !userName.valid" >username is required</p>
     
     <p>email</p>
     <input type="text" name="email" ngModel required #email="ngModel">
     <p style="color: red;" *ngIf="email.touched && !email.valid " >email is required</p>
+    
     <p>age</p>
     <input type="text" name="age" ngModel required #age="ngModel">
     <p style="color: red;" *ngIf="age.touched && !age.valid " >age is required</p>

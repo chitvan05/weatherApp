@@ -1,0 +1,17 @@
+<h1>Reactive Forms</h1>
+<!-- assgin a formGroup with form name -->
+<form [formGroup]="reactivForm">
+    <p >User Name</p>
+    <input type="text" name="" id="" formControlName="username" maxlength="10" >
+    <br>
+    <p >Age</p>
+    <input type="text" name="" id="" formControlName="age" >
+    <br>
+    <p >Email</p>
+    <input type="text" name="" id="" formControlName="email" >
+    <br>
+    <p >Password</p>
+    <input type="text" name="" id="" formControlName="password" >
+    <br>
+    <button [disabled]="!reactivForm.valid">Reactive</button>
+</form>
