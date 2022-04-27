@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService } from './../common.service'
 
 @Component({
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
   hideUserNameText: boolean = false;
   studentDetails: any[];
 
-  constructor(private common : CommonService ) { }
+  constructor(private common : CommonService, private router : Router ) { }
 
   city:any;
   state:any;
@@ -95,5 +96,9 @@ export class LoginComponent implements OnInit {
   focusOut(){
     console.log('function for focus out');  
     this.hideUserNameText = true;
+  }
+
+  gotoReactiveForm(){
+    this.router.navigateByUrl('reactiveForm');
   }
 }

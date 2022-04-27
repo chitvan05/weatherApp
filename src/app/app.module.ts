@@ -14,6 +14,8 @@ import { CommonModule } from '@angular/common';
 import { NumberPipe } from './number.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ListUserComponent } from './list-user/list-user.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     AddStudentComponent,
     NumberPipe,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ListUserComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
