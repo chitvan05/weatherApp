@@ -35,21 +35,21 @@ div {
 <body>
 
 <div>
-  <form>
+  <form [formGroup]="addUser">
     <label for="fname">Company</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your company.." formControlName="company">
 
-    <label for="lname">Contract</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Contact</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your contact.." formControlName="contact">
 
     <label for="country">Country</label>
-    <select id="country" name="country">
+    <select id="country" name="country" formControlName="country">
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
   
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" (click)="addUserToList(addUser.value)">
     <button>Check User List</button>
   </form>
 </div>

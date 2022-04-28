@@ -7,6 +7,6 @@ export class CommonService {
 
   serviceVariable ='I am from service';
   demoValue = "demo"
-
+  userListArray: any = [];
   constructor() { }
 }
